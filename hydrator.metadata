@@ -1,0 +1,8 @@
+{
+  "repoURL": "https://github.com/ohamadeh/argocd-example-apps",
+  "drySha": "a90d82f911e0fe05134ffa1ef9e8e5ce83ba0290",
+  "author": "Omar Hamadeh <135509168+ohamadeh@users.noreply.github.com>",
+  "date": "2025-09-10T10:27:48Z",
+  "subject": "Merge pull request #1 from argoproj/master",
+  "body": "chore: modernize ingress annotations and nodeSelector label (#402)\n"
+}
