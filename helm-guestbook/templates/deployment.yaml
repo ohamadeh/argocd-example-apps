@@ -7,6 +7,9 @@ metadata:
     chart: {{ template "helm-guestbook.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
+  annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-weight: "1"
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
