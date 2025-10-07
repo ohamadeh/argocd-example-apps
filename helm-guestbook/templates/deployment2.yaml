@@ -8,7 +8,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
   annotations:
-    helm.sh/hook-weight: "3"
+    helm.sh/hook-weight: "2"
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
