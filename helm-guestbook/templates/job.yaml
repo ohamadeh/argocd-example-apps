@@ -14,7 +14,6 @@ spec:
   template:
     metadata:
       labels:
-        {{- include "id-weaviate.selectorLabels" . | nindent 8 }}
         app.kubernetes.io/component: init-sleep
     spec:
       serviceAccountName: {{ .Values.serviceAccount.name }}
