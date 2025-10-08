@@ -16,7 +16,6 @@ spec:
       labels:
         app.kubernetes.io/component: init-sleep
     spec:
-      serviceAccountName: {{ .Values.serviceAccount.name }}
       restartPolicy: OnFailure
       {{- with .Values.initSleep.nodeSelector }}
       nodeSelector:
