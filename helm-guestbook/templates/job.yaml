@@ -17,14 +17,6 @@ spec:
         app.kubernetes.io/component: init-sleep
     spec:
       restartPolicy: OnFailure
-      {{- with .Values.initSleep.nodeSelector }}
-      nodeSelector:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.initSleep.tolerations }}
-      tolerations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
       containers:
       - name: init-sleep
         image: busybox:1.28
